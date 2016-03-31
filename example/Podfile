@@ -1,0 +1,10 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/elegion/ios-podspecs.git'
+
+target 'elnviews', :exclusive => true do
+    pod 'ELNViews', :path => '../'
+end
+
+target 'elnviewsTests', :exclusive => true do
+    pod 'ELNViews', :path => '../'
+end

@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FBE8E77F550E2EC1B4ECD3C574305F8 /* Pods-elnviews-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9059892049E7ED6F7914806DEC85B4 /* Pods-elnviews-dummy.m */; };
+		1AF158A835115519A60E3ECF6E8B4F34 /* ELNViews.h in Headers */ = {isa = PBXBuildFile; fileRef = B416886E47A00DBD5E2265A26DA1BDB3 /* ELNViews.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DE9073981224CE2165E8A72F31EBFCB /* ELNScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B420E06E34265723E55C4878537A6055 /* ELNScrollView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		21E8F0DE748FA6656A5D89748D639755 /* Pods-elnviewsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCA90A3806F8CFB3FAEDF820D0D99A /* Pods-elnviewsTests-dummy.m */; };
+		248D6F5922EF00BE9F9814C11E1FE56E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		76554809E2201F39A4BE31C3659FBB9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		B77CC47F4A4CF8AE5C7DD142F0B1FB03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		CD9E628850011D40F9906AF054E6777D /* ELNViews-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1C03C89095A3936CF4B2E8B61F9085 /* ELNViews-dummy.m */; };
+		F3AFE4AC0F96E08CD75956ED9C03E449 /* ELNLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = A8501FE1E13EF1FF480A8956D5DE3632 /* ELNLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB5222062FB640B4EEC6D02C2C39A448 /* ELNLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9001E2259BD0E2D28B83D7B916384D11 /* ELNLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FED757E938D8027CCA413DC703504A9F /* ELNScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC4D5486FB16661A0960FB9B6A2DE47 /* ELNScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0D832A2665E1F7F10BB2632676964E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD14586C0C460BDFAEB69EFDE15EDA4E;
+			remoteInfo = ELNViews;
+		};
+		CAA01956CFBF1A34855ED217D550C8B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD14586C0C460BDFAEB69EFDE15EDA4E;
+			remoteInfo = ELNViews;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B925A65727FA6E6B7CC759A3CE9A9EB /* Pods-elnviews-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-elnviews-acknowledgements.plist"; sourceTree = "<group>"; };
+		0EBCA90A3806F8CFB3FAEDF820D0D99A /* Pods-elnviewsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-elnviewsTests-dummy.m"; sourceTree = "<group>"; };
+		153D9C7A2CA3F19E4BC703C9AF86DF29 /* Pods-elnviewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-elnviewsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		19033C7989E22C89D1414D73D61F4063 /* Pods-elnviews-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-elnviews-frameworks.sh"; sourceTree = "<group>"; };
+		190BD7A90859A3A23B7E75A082FA27FC /* Pods-elnviewsTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-elnviewsTests-resources.sh"; sourceTree = "<group>"; };
+		2CCE830A5FBE4DCC268A87BFAC42435B /* Pods-elnviews-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-elnviews-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		45ED3E2233D300A139F91AAD74AF049A /* Pods-elnviews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-elnviews.release.xcconfig"; sourceTree = "<group>"; };
+		4B8B959A51F2EA048BD248ADA6BA327F /* libPods-elnviews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-elnviews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C1C03C89095A3936CF4B2E8B61F9085 /* ELNViews-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ELNViews-dummy.m"; sourceTree = "<group>"; };
+		4E93B846E8670102D2F2703AB198DFFC /* Pods-elnviewsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-elnviewsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4FC4D6C05FFC059A20B4BA6B900C5CED /* ELNViews-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ELNViews-prefix.pch"; sourceTree = "<group>"; };
+		6C2FCD0B12BE1D9010434CA2B01BF81E /* libELNViews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libELNViews.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9001E2259BD0E2D28B83D7B916384D11 /* ELNLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELNLabel.m; sourceTree = "<group>"; };
+		92AF179360B63EBAC5C993F7FD10E1D2 /* Pods-elnviews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-elnviews.debug.xcconfig"; sourceTree = "<group>"; };
+		9D9059892049E7ED6F7914806DEC85B4 /* Pods-elnviews-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-elnviews-dummy.m"; sourceTree = "<group>"; };
+		A8501FE1E13EF1FF480A8956D5DE3632 /* ELNLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELNLabel.h; sourceTree = "<group>"; };
+		AB745E70851653D764BE6BA30E34DDE2 /* Pods-elnviewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-elnviewsTests.release.xcconfig"; sourceTree = "<group>"; };
+		B416886E47A00DBD5E2265A26DA1BDB3 /* ELNViews.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELNViews.h; sourceTree = "<group>"; };
+		B420E06E34265723E55C4878537A6055 /* ELNScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELNScrollView.m; sourceTree = "<group>"; };
+		B5E3F0518D153BCC5E9CACAA27B2A6DF /* libPods-elnviewsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-elnviewsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8C9BFDAB16D7AC7C9036C713F038150 /* Pods-elnviewsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-elnviewsTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D7DC77328FCC32E09457B546FF987F02 /* ELNViews.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ELNViews.xcconfig; sourceTree = "<group>"; };
+		DBC4D5486FB16661A0960FB9B6A2DE47 /* ELNScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELNScrollView.h; sourceTree = "<group>"; };
+		E22990F15A377DD69B374BD2D3074C3C /* Pods-elnviewsTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-elnviewsTests-frameworks.sh"; sourceTree = "<group>"; };
+		FAF3B9BFC26211420F8E2D1814BF758F /* Pods-elnviews-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-elnviews-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9668A248C891497D43B7253A99C2809B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248D6F5922EF00BE9F9814C11E1FE56E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97E67005FC93FAFD5DB625C6BC38644F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B77CC47F4A4CF8AE5C7DD142F0B1FB03 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC84FAD35B7C1AFB12EBCCA90B46DE33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76554809E2201F39A4BE31C3659FBB9F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B00E1BE58E09FE59E413DC18DF153A3 /* Pods-elnviewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E93B846E8670102D2F2703AB198DFFC /* Pods-elnviewsTests-acknowledgements.markdown */,
+				B8C9BFDAB16D7AC7C9036C713F038150 /* Pods-elnviewsTests-acknowledgements.plist */,
+				0EBCA90A3806F8CFB3FAEDF820D0D99A /* Pods-elnviewsTests-dummy.m */,
+				E22990F15A377DD69B374BD2D3074C3C /* Pods-elnviewsTests-frameworks.sh */,
+				190BD7A90859A3A23B7E75A082FA27FC /* Pods-elnviewsTests-resources.sh */,
+				153D9C7A2CA3F19E4BC703C9AF86DF29 /* Pods-elnviewsTests.debug.xcconfig */,
+				AB745E70851653D764BE6BA30E34DDE2 /* Pods-elnviewsTests.release.xcconfig */,
+			);
+			name = "Pods-elnviewsTests";
+			path = "Target Support Files/Pods-elnviewsTests";
+			sourceTree = "<group>";
+		};
+		583C54B2BF2B77F21A6B3F74222344C7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A8501FE1E13EF1FF480A8956D5DE3632 /* ELNLabel.h */,
+				9001E2259BD0E2D28B83D7B916384D11 /* ELNLabel.m */,
+				DBC4D5486FB16661A0960FB9B6A2DE47 /* ELNScrollView.h */,
+				B420E06E34265723E55C4878537A6055 /* ELNScrollView.m */,
+				B416886E47A00DBD5E2265A26DA1BDB3 /* ELNViews.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		7C57DE29EFCE299F603E54B4B2CC94FF /* Pods-elnviews */ = {
+			isa = PBXGroup;
+			children = (
+				2CCE830A5FBE4DCC268A87BFAC42435B /* Pods-elnviews-acknowledgements.markdown */,
+				0B925A65727FA6E6B7CC759A3CE9A9EB /* Pods-elnviews-acknowledgements.plist */,
+				9D9059892049E7ED6F7914806DEC85B4 /* Pods-elnviews-dummy.m */,
+				19033C7989E22C89D1414D73D61F4063 /* Pods-elnviews-frameworks.sh */,
+				FAF3B9BFC26211420F8E2D1814BF758F /* Pods-elnviews-resources.sh */,
+				92AF179360B63EBAC5C993F7FD10E1D2 /* Pods-elnviews.debug.xcconfig */,
+				45ED3E2233D300A139F91AAD74AF049A /* Pods-elnviews.release.xcconfig */,
+			);
+			name = "Pods-elnviews";
+			path = "Target Support Files/Pods-elnviews";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				F540EB33239B95D7DFDD0886F22A89E1 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F151DCF12BB762F4EE645DAF0C09C3B7 /* Products */,
+				E86202F86CE18FBDCEB7BE904B427788 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8B9275A11EE64F6CFEE8C517E3BD5CA3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7DC77328FCC32E09457B546FF987F02 /* ELNViews.xcconfig */,
+				4C1C03C89095A3936CF4B2E8B61F9085 /* ELNViews-dummy.m */,
+				4FC4D6C05FFC059A20B4BA6B900C5CED /* ELNViews-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "example/Pods/Target Support Files/ELNViews";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D034EA636D0892F44C4B8A26EDF69F83 /* ELNViews */ = {
+			isa = PBXGroup;
+			children = (
+				583C54B2BF2B77F21A6B3F74222344C7 /* Source */,
+				8B9275A11EE64F6CFEE8C517E3BD5CA3 /* Support Files */,
+			);
+			name = ELNViews;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E86202F86CE18FBDCEB7BE904B427788 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C57DE29EFCE299F603E54B4B2CC94FF /* Pods-elnviews */,
+				0B00E1BE58E09FE59E413DC18DF153A3 /* Pods-elnviewsTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F151DCF12BB762F4EE645DAF0C09C3B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C2FCD0B12BE1D9010434CA2B01BF81E /* libELNViews.a */,
+				4B8B959A51F2EA048BD248ADA6BA327F /* libPods-elnviews.a */,
+				B5E3F0518D153BCC5E9CACAA27B2A6DF /* libPods-elnviewsTests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F540EB33239B95D7DFDD0886F22A89E1 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D034EA636D0892F44C4B8A26EDF69F83 /* ELNViews */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		29B5C9F909DD3B84457E7AA4F1476F3D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3AFE4AC0F96E08CD75956ED9C03E449 /* ELNLabel.h in Headers */,
+				FED757E938D8027CCA413DC703504A9F /* ELNScrollView.h in Headers */,
+				1AF158A835115519A60E3ECF6E8B4F34 /* ELNViews.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0737B2351D57F49F5DA779005A96A8DF /* Pods-elnviewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D39B601D952A61BB3469E0E66890153 /* Build configuration list for PBXNativeTarget "Pods-elnviewsTests" */;
+			buildPhases = (
+				148E0F6AD63955A0E125EA4617716CDD /* Sources */,
+				97E67005FC93FAFD5DB625C6BC38644F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44C9BAEF12E5CEC5BB489ED3C90A2EB1 /* PBXTargetDependency */,
+			);
+			name = "Pods-elnviewsTests";
+			productName = "Pods-elnviewsTests";
+			productReference = B5E3F0518D153BCC5E9CACAA27B2A6DF /* libPods-elnviewsTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D6236928095D37800DE9C7666C6AE819 /* Pods-elnviews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75006B577D61BBCFB4C559154279CF20 /* Build configuration list for PBXNativeTarget "Pods-elnviews" */;
+			buildPhases = (
+				7C9926669C4C23F809FC14274DA03C6A /* Sources */,
+				9668A248C891497D43B7253A99C2809B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60D4FAE0B22F60C6BE6EE59804666E88 /* PBXTargetDependency */,
+			);
+			name = "Pods-elnviews";
+			productName = "Pods-elnviews";
+			productReference = 4B8B959A51F2EA048BD248ADA6BA327F /* libPods-elnviews.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DD14586C0C460BDFAEB69EFDE15EDA4E /* ELNViews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC63D7BDB0E2E1E28E8C85D8B458DE4B /* Build configuration list for PBXNativeTarget "ELNViews" */;
+			buildPhases = (
+				B7006019D99337713CCE863D3737C236 /* Sources */,
+				BC84FAD35B7C1AFB12EBCCA90B46DE33 /* Frameworks */,
+				29B5C9F909DD3B84457E7AA4F1476F3D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ELNViews;
+			productName = ELNViews;
+			productReference = 6C2FCD0B12BE1D9010434CA2B01BF81E /* libELNViews.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F151DCF12BB762F4EE645DAF0C09C3B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD14586C0C460BDFAEB69EFDE15EDA4E /* ELNViews */,
+				D6236928095D37800DE9C7666C6AE819 /* Pods-elnviews */,
+				0737B2351D57F49F5DA779005A96A8DF /* Pods-elnviewsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		148E0F6AD63955A0E125EA4617716CDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21E8F0DE748FA6656A5D89748D639755 /* Pods-elnviewsTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C9926669C4C23F809FC14274DA03C6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FBE8E77F550E2EC1B4ECD3C574305F8 /* Pods-elnviews-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7006019D99337713CCE863D3737C236 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB5222062FB640B4EEC6D02C2C39A448 /* ELNLabel.m in Sources */,
+				1DE9073981224CE2165E8A72F31EBFCB /* ELNScrollView.m in Sources */,
+				CD9E628850011D40F9906AF054E6777D /* ELNViews-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44C9BAEF12E5CEC5BB489ED3C90A2EB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ELNViews;
+			target = DD14586C0C460BDFAEB69EFDE15EDA4E /* ELNViews */;
+			targetProxy = CAA01956CFBF1A34855ED217D550C8B6 /* PBXContainerItemProxy */;
+		};
+		60D4FAE0B22F60C6BE6EE59804666E88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ELNViews;
+			target = DD14586C0C460BDFAEB69EFDE15EDA4E /* ELNViews */;
+			targetProxy = C0D832A2665E1F7F10BB2632676964E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1B323A342CB507251EF118315DE30973 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7DC77328FCC32E09457B546FF987F02 /* ELNViews.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ELNViews/ELNViews-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		24D2D30BAB8D18122389E598862E1D13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92AF179360B63EBAC5C993F7FD10E1D2 /* Pods-elnviews.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		581034C451794FE7032AAFE235410B18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 153D9C7A2CA3F19E4BC703C9AF86DF29 /* Pods-elnviewsTests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9A7110758D7B566C0D79B5E86D49805B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45ED3E2233D300A139F91AAD74AF049A /* Pods-elnviews.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C5A18280E9321A9268D1C80B7DA43967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DED218063052E36F6C1A0D8D13190C5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7DC77328FCC32E09457B546FF987F02 /* ELNViews.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ELNViews/ELNViews-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F2F0E2902502C580E090C9FC8D49598B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB745E70851653D764BE6BA30E34DDE2 /* Pods-elnviewsTests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D1534490D941DCA47C62AC4314182AF /* Debug */,
+				C5A18280E9321A9268D1C80B7DA43967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D39B601D952A61BB3469E0E66890153 /* Build configuration list for PBXNativeTarget "Pods-elnviewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				581034C451794FE7032AAFE235410B18 /* Debug */,
+				F2F0E2902502C580E090C9FC8D49598B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75006B577D61BBCFB4C559154279CF20 /* Build configuration list for PBXNativeTarget "Pods-elnviews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D2D30BAB8D18122389E598862E1D13 /* Debug */,
+				9A7110758D7B566C0D79B5E86D49805B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC63D7BDB0E2E1E28E8C85D8B458DE4B /* Build configuration list for PBXNativeTarget "ELNViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B323A342CB507251EF118315DE30973 /* Debug */,
+				DED218063052E36F6C1A0D8D13190C5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

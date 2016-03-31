@@ -1,0 +1,18 @@
+{
+  "name": "ELNViews",
+  "version": "0.0.1",
+  "summary": "Custom UIKit views.",
+  "homepage": "https://github.com/elegion/ios-ELNViews",
+  "license": "MIT",
+  "authors": {
+    "chebur": "chebur.mail@gmail.com"
+  },
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "git": "https://github.com/elegion/ios-ELNViews.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "Source/**/*"
+}

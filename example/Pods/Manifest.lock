@@ -1,0 +1,14 @@
+PODS:
+  - ELNViews (0.0.1)
+
+DEPENDENCIES:
+  - ELNViews (from `../`)
+
+EXTERNAL SOURCES:
+  ELNViews:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ELNViews: 12a87f1fd418ab07e0e6c09511ab343cdced5d77
+
+COCOAPODS: 0.39.0
