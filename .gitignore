@@ -1,11 +1,22 @@
+# OS X
+.DS_Store
+ 
+# Xcode
 *.xccheckout
 *.DS_Store
 *xcuserdata*
-*build
+*build*
 .idea
-docs/
-
+ 
+!*/xcshareddata/*
+*.xccheckout
+*/xcuserdata/*
+ 
 # fastlane
 fastlane/report.xml
+fastlane/*report*
 *app.dSYM.zip
-*.ipa
+ 
+# sonar
+*sonar-reports*
+*compile_commands.json
