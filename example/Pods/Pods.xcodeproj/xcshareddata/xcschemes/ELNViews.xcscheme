@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F9432DF67B8E68CC1847039B'
+               BlueprintIdentifier = 'E4F7F95CD2B23E0ABD2EE72F'
                BlueprintName = 'ELNViews'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libELNViews.a'>

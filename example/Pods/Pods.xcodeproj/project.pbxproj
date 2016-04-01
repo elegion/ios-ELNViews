@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0FBE8E77F550E2EC1B4ECD3C574305F8 /* Pods-elnviews-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9059892049E7ED6F7914806DEC85B4 /* Pods-elnviews-dummy.m */; };
-		1AF158A835115519A60E3ECF6E8B4F34 /* ELNViews.h in Headers */ = {isa = PBXBuildFile; fileRef = B416886E47A00DBD5E2265A26DA1BDB3 /* ELNViews.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1DE9073981224CE2165E8A72F31EBFCB /* ELNScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B420E06E34265723E55C4878537A6055 /* ELNScrollView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1AF158A835115519A60E3ECF6E8B4F34 /* ELNViews.h in Headers */ = {isa = PBXBuildFile; fileRef = D72AE76CA4BA59ADAE8DFA4DF993EC32 /* ELNViews.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21E8F0DE748FA6656A5D89748D639755 /* Pods-elnviewsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCA90A3806F8CFB3FAEDF820D0D99A /* Pods-elnviewsTests-dummy.m */; };
 		248D6F5922EF00BE9F9814C11E1FE56E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		523A2B4E6F29EEEC463E53A38D6FAD26 /* ELNLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1880549DFE7B3628D0B747EC53A4DC /* ELNLabel.m */; };
 		76554809E2201F39A4BE31C3659FBB9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		7758B4A9133D2B0425CC0188291706CC /* ELNViews-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EB04C780B8A6E4D0DA13CD03886E89 /* ELNViews-dummy.m */; };
+		93E7E116FE083C156A03B92B5F4F7278 /* ELNScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 606EAA6E560E52778ED8CB20D027E5EB /* ELNScrollView.m */; };
 		B77CC47F4A4CF8AE5C7DD142F0B1FB03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		CD9E628850011D40F9906AF054E6777D /* ELNViews-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1C03C89095A3936CF4B2E8B61F9085 /* ELNViews-dummy.m */; };
-		F3AFE4AC0F96E08CD75956ED9C03E449 /* ELNLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = A8501FE1E13EF1FF480A8956D5DE3632 /* ELNLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB5222062FB640B4EEC6D02C2C39A448 /* ELNLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9001E2259BD0E2D28B83D7B916384D11 /* ELNLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		FED757E938D8027CCA413DC703504A9F /* ELNScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC4D5486FB16661A0960FB9B6A2DE47 /* ELNScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3AFE4AC0F96E08CD75956ED9C03E449 /* ELNLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = DF1EBD28A8B5344573F3A157FCE087B6 /* ELNLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FED757E938D8027CCA413DC703504A9F /* ELNScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C8FB80230C73C9646C6253ED1EAE5B5 /* ELNScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,26 +43,26 @@
 		153D9C7A2CA3F19E4BC703C9AF86DF29 /* Pods-elnviewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-elnviewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		19033C7989E22C89D1414D73D61F4063 /* Pods-elnviews-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-elnviews-frameworks.sh"; sourceTree = "<group>"; };
 		190BD7A90859A3A23B7E75A082FA27FC /* Pods-elnviewsTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-elnviewsTests-resources.sh"; sourceTree = "<group>"; };
+		2397E847B6DE8726B06B737294EEB944 /* ELNViews.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ELNViews.xcconfig; sourceTree = "<group>"; };
 		2CCE830A5FBE4DCC268A87BFAC42435B /* Pods-elnviews-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-elnviews-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		45ED3E2233D300A139F91AAD74AF049A /* Pods-elnviews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-elnviews.release.xcconfig"; sourceTree = "<group>"; };
 		4B8B959A51F2EA048BD248ADA6BA327F /* libPods-elnviews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-elnviews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C1C03C89095A3936CF4B2E8B61F9085 /* ELNViews-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ELNViews-dummy.m"; sourceTree = "<group>"; };
 		4E93B846E8670102D2F2703AB198DFFC /* Pods-elnviewsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-elnviewsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4FC4D6C05FFC059A20B4BA6B900C5CED /* ELNViews-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ELNViews-prefix.pch"; sourceTree = "<group>"; };
+		606EAA6E560E52778ED8CB20D027E5EB /* ELNScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELNScrollView.m; sourceTree = "<group>"; };
 		6C2FCD0B12BE1D9010434CA2B01BF81E /* libELNViews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libELNViews.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9001E2259BD0E2D28B83D7B916384D11 /* ELNLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELNLabel.m; sourceTree = "<group>"; };
+		6C8FB80230C73C9646C6253ED1EAE5B5 /* ELNScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELNScrollView.h; sourceTree = "<group>"; };
 		92AF179360B63EBAC5C993F7FD10E1D2 /* Pods-elnviews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-elnviews.debug.xcconfig"; sourceTree = "<group>"; };
+		98EB04C780B8A6E4D0DA13CD03886E89 /* ELNViews-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ELNViews-dummy.m"; sourceTree = "<group>"; };
 		9D9059892049E7ED6F7914806DEC85B4 /* Pods-elnviews-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-elnviews-dummy.m"; sourceTree = "<group>"; };
-		A8501FE1E13EF1FF480A8956D5DE3632 /* ELNLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELNLabel.h; sourceTree = "<group>"; };
+		A8BBFF41C66E90B16BF98074B134AD37 /* ELNViews-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ELNViews-prefix.pch"; sourceTree = "<group>"; };
 		AB745E70851653D764BE6BA30E34DDE2 /* Pods-elnviewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-elnviewsTests.release.xcconfig"; sourceTree = "<group>"; };
-		B416886E47A00DBD5E2265A26DA1BDB3 /* ELNViews.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELNViews.h; sourceTree = "<group>"; };
-		B420E06E34265723E55C4878537A6055 /* ELNScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELNScrollView.m; sourceTree = "<group>"; };
 		B5E3F0518D153BCC5E9CACAA27B2A6DF /* libPods-elnviewsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-elnviewsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8C9BFDAB16D7AC7C9036C713F038150 /* Pods-elnviewsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-elnviewsTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D7DC77328FCC32E09457B546FF987F02 /* ELNViews.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ELNViews.xcconfig; sourceTree = "<group>"; };
-		DBC4D5486FB16661A0960FB9B6A2DE47 /* ELNScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELNScrollView.h; sourceTree = "<group>"; };
+		CB1880549DFE7B3628D0B747EC53A4DC /* ELNLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELNLabel.m; sourceTree = "<group>"; };
+		D72AE76CA4BA59ADAE8DFA4DF993EC32 /* ELNViews.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELNViews.h; sourceTree = "<group>"; };
+		DF1EBD28A8B5344573F3A157FCE087B6 /* ELNLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELNLabel.h; sourceTree = "<group>"; };
 		E22990F15A377DD69B374BD2D3074C3C /* Pods-elnviewsTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-elnviewsTests-frameworks.sh"; sourceTree = "<group>"; };
 		FAF3B9BFC26211420F8E2D1814BF758F /* Pods-elnviews-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-elnviews-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,14 +110,24 @@
 			path = "Target Support Files/Pods-elnviewsTests";
 			sourceTree = "<group>";
 		};
-		583C54B2BF2B77F21A6B3F74222344C7 /* Source */ = {
+		2F2C89004A70F240C34CBDECB10716A8 /* ELNViews */ = {
 			isa = PBXGroup;
 			children = (
-				A8501FE1E13EF1FF480A8956D5DE3632 /* ELNLabel.h */,
-				9001E2259BD0E2D28B83D7B916384D11 /* ELNLabel.m */,
-				DBC4D5486FB16661A0960FB9B6A2DE47 /* ELNScrollView.h */,
-				B420E06E34265723E55C4878537A6055 /* ELNScrollView.m */,
-				B416886E47A00DBD5E2265A26DA1BDB3 /* ELNViews.h */,
+				4B58CAA1D081D91E078BBBB74EBF2579 /* Source */,
+				F6622C1CB0532A4E475B7801DE7ED0D9 /* Support Files */,
+			);
+			name = ELNViews;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		4B58CAA1D081D91E078BBBB74EBF2579 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DF1EBD28A8B5344573F3A157FCE087B6 /* ELNLabel.h */,
+				CB1880549DFE7B3628D0B747EC53A4DC /* ELNLabel.m */,
+				6C8FB80230C73C9646C6253ED1EAE5B5 /* ELNScrollView.h */,
+				606EAA6E560E52778ED8CB20D027E5EB /* ELNScrollView.m */,
+				D72AE76CA4BA59ADAE8DFA4DF993EC32 /* ELNViews.h */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -148,17 +158,6 @@
 			);
 			sourceTree = "<group>";
 		};
-		8B9275A11EE64F6CFEE8C517E3BD5CA3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D7DC77328FCC32E09457B546FF987F02 /* ELNViews.xcconfig */,
-				4C1C03C89095A3936CF4B2E8B61F9085 /* ELNViews-dummy.m */,
-				4FC4D6C05FFC059A20B4BA6B900C5CED /* ELNViews-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "example/Pods/Target Support Files/ELNViews";
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,16 +172,6 @@
 				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		D034EA636D0892F44C4B8A26EDF69F83 /* ELNViews */ = {
-			isa = PBXGroup;
-			children = (
-				583C54B2BF2B77F21A6B3F74222344C7 /* Source */,
-				8B9275A11EE64F6CFEE8C517E3BD5CA3 /* Support Files */,
-			);
-			name = ELNViews;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		E86202F86CE18FBDCEB7BE904B427788 /* Targets Support Files */ = {
@@ -207,9 +196,20 @@
 		F540EB33239B95D7DFDD0886F22A89E1 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D034EA636D0892F44C4B8A26EDF69F83 /* ELNViews */,
+				2F2C89004A70F240C34CBDECB10716A8 /* ELNViews */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F6622C1CB0532A4E475B7801DE7ED0D9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2397E847B6DE8726B06B737294EEB944 /* ELNViews.xcconfig */,
+				98EB04C780B8A6E4D0DA13CD03886E89 /* ELNViews-dummy.m */,
+				A8BBFF41C66E90B16BF98074B134AD37 /* ELNViews-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ELNViews";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +266,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC63D7BDB0E2E1E28E8C85D8B458DE4B /* Build configuration list for PBXNativeTarget "ELNViews" */;
 			buildPhases = (
-				B7006019D99337713CCE863D3737C236 /* Sources */,
+				C09F6A2549537D49048D803D7177D86C /* Sources */,
 				BC84FAD35B7C1AFB12EBCCA90B46DE33 /* Frameworks */,
 				29B5C9F909DD3B84457E7AA4F1476F3D /* Headers */,
 			);
@@ -324,13 +324,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7006019D99337713CCE863D3737C236 /* Sources */ = {
+		C09F6A2549537D49048D803D7177D86C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB5222062FB640B4EEC6D02C2C39A448 /* ELNLabel.m in Sources */,
-				1DE9073981224CE2165E8A72F31EBFCB /* ELNScrollView.m in Sources */,
-				CD9E628850011D40F9906AF054E6777D /* ELNViews-dummy.m in Sources */,
+				523A2B4E6F29EEEC463E53A38D6FAD26 /* ELNLabel.m in Sources */,
+				93E7E116FE083C156A03B92B5F4F7278 /* ELNScrollView.m in Sources */,
+				7758B4A9133D2B0425CC0188291706CC /* ELNViews-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +354,7 @@
 /* Begin XCBuildConfiguration section */
 		1B323A342CB507251EF118315DE30973 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7DC77328FCC32E09457B546FF987F02 /* ELNViews.xcconfig */;
+			baseConfigurationReference = 2397E847B6DE8726B06B737294EEB944 /* ELNViews.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/ELNViews/ELNViews-prefix.pch";
@@ -496,7 +496,7 @@
 		};
 		DED218063052E36F6C1A0D8D13190C5D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7DC77328FCC32E09457B546FF987F02 /* ELNViews.xcconfig */;
+			baseConfigurationReference = 2397E847B6DE8726B06B737294EEB944 /* ELNViews.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/ELNViews/ELNViews-prefix.pch";

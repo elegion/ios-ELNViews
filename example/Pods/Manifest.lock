@@ -1,5 +1,5 @@
 PODS:
-  - ELNViews (0.0.1)
+  - ELNViews (0.0.2)
 
 DEPENDENCIES:
   - ELNViews (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ELNViews: 12a87f1fd418ab07e0e6c09511ab343cdced5d77
+  ELNViews: 855632810aeca9e46986c6b2a2ff5cc3720625f2
 
 COCOAPODS: 0.39.0
