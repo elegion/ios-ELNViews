@@ -101,14 +101,14 @@
     
     if (animated) {
         [CATransaction begin];
-        animations();
         [CATransaction setCompletionBlock:completion];
+        animations();
         [CATransaction commit];
     } else {
         [CATransaction begin];
-        [CATransaction setValue:(__bridge id)kCFBooleanTrue forKey:kCATransactionDisableActions];
-        animations();
+        [CATransaction setDisableActions:YES];
         [CATransaction setCompletionBlock:completion];
+        animations();
         [CATransaction commit];
     }
 }
