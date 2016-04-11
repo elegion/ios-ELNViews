@@ -13,6 +13,10 @@
 		111D9FCE1C860ED800CF71B4 /* ELNLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 111D9FCA1C860ED800CF71B4 /* ELNLabel.h */; };
 		111D9FCF1C860ED800CF71B4 /* ELNLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 111D9FCB1C860ED800CF71B4 /* ELNLabel.m */; };
 		111D9FD01C860ED800CF71B4 /* ELNScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 111D9FCC1C860ED800CF71B4 /* ELNScrollView.m */; };
+		1168E15B1CBB9B82009B09D0 /* ELNPINTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 1168E1591CBB9B82009B09D0 /* ELNPINTextField.h */; };
+		1168E15C1CBB9B82009B09D0 /* ELNPINTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1168E15A1CBB9B82009B09D0 /* ELNPINTextField.m */; };
+		1168E15F1CBB9C64009B09D0 /* ELNPINView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1168E15D1CBB9C64009B09D0 /* ELNPINView.h */; };
+		1168E1601CBB9C64009B09D0 /* ELNPINView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1168E15E1CBB9C64009B09D0 /* ELNPINView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		111D9FCA1C860ED800CF71B4 /* ELNLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELNLabel.h; sourceTree = "<group>"; };
 		111D9FCB1C860ED800CF71B4 /* ELNLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELNLabel.m; sourceTree = "<group>"; };
 		111D9FCC1C860ED800CF71B4 /* ELNScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELNScrollView.m; sourceTree = "<group>"; };
+		1168E1591CBB9B82009B09D0 /* ELNPINTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELNPINTextField.h; sourceTree = "<group>"; };
+		1168E15A1CBB9B82009B09D0 /* ELNPINTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELNPINTextField.m; sourceTree = "<group>"; };
+		1168E15D1CBB9C64009B09D0 /* ELNPINView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELNPINView.h; sourceTree = "<group>"; };
+		1168E15E1CBB9C64009B09D0 /* ELNPINView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELNPINView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,10 @@
 			children = (
 				111D9FCA1C860ED800CF71B4 /* ELNLabel.h */,
 				111D9FCB1C860ED800CF71B4 /* ELNLabel.m */,
+				1168E1591CBB9B82009B09D0 /* ELNPINTextField.h */,
+				1168E15A1CBB9B82009B09D0 /* ELNPINTextField.m */,
+				1168E15D1CBB9C64009B09D0 /* ELNPINView.h */,
+				1168E15E1CBB9C64009B09D0 /* ELNPINView.m */,
 				111D9FC91C860ED800CF71B4 /* ELNScrollView.h */,
 				111D9FCC1C860ED800CF71B4 /* ELNScrollView.m */,
 			);
@@ -90,8 +102,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1168E15F1CBB9C64009B09D0 /* ELNPINView.h in Headers */,
 				111D9FCE1C860ED800CF71B4 /* ELNLabel.h in Headers */,
 				111D9FCD1C860ED800CF71B4 /* ELNScrollView.h in Headers */,
+				1168E15B1CBB9B82009B09D0 /* ELNPINTextField.h in Headers */,
 				111D9FBB1C860CE800CF71B4 /* ELNViews.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,7 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1168E1601CBB9C64009B09D0 /* ELNPINView.m in Sources */,
 				111D9FCF1C860ED800CF71B4 /* ELNLabel.m in Sources */,
+				1168E15C1CBB9B82009B09D0 /* ELNPINTextField.m in Sources */,
 				111D9FD01C860ED800CF71B4 /* ELNScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +331,7 @@
 				111D9FB71C860CCA00CF71B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
