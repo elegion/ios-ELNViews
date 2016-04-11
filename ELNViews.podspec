@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ELNViews"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "Custom UIKit views."
   s.homepage     = "https://github.com/elegion/ios-ELNViews"
   s.author       = { "chebur" => "chebur.mail@gmail.com" }
