@@ -4,6 +4,7 @@
 
 - ELNLabel
 - ELNScrollView
+- ELNPINTextField
 
 ## Installation
 
@@ -33,7 +34,11 @@ github 'elegion/ios-ELNViews'
 
 ###ELNScrollView
 
-Скролл вью, который не отменяет скрол при нажатии на UIButton и прочие UIControl подклассы.
+Скролл вью, который не отменяет скрол при нажатии на `UIButton` и прочие `UIControl` подклассы.
+
+### ELNPINTextField
+
+Поле для ввода пинкода. Реализует протокол `UIKeyInput`. ![pintextfield](pintextfield.png)
 
 ## Contribution
 
