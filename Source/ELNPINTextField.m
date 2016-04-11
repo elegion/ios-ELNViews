@@ -43,12 +43,10 @@
     self.numberOfCharacters = 4;
 }
 
-#pragma mark - Text
+#pragma mark - Accessing the Text Attributes
 
 - (void)setText:(NSString *)text {
-    _text = text;
-    
-    [self textValueChanged];
+    [self setText:text animated:NO completion:nil];
 }
 
 - (void)setTextColor:(UIColor *)textColor {
@@ -63,6 +61,39 @@
     for (ELNPINView *subview in self.characterSubviews) {
         subview.textSize = self.textSize;
     }
+}
+
+#pragma mark - Text Updating
+
+- (void)setText:(NSString *)text animated:(BOOL)animated completion:(void (^)())completion {
+    _text = [text copy];
+    [self textValueChangedAnimated:animated completion:completion];
+}
+
+- (void)textValueChangedAnimated:(BOOL)animated completion:(void (^)())completion {
+    NSUInteger count = self.text.length;
+    
+    // Merge all selections in the single animation group.
+    // This allows to perform the delegate callback when all animations have completed.
+    dispatch_group_t dispatch_group = dispatch_group_create();
+    
+    dispatch_group_enter(dispatch_group);
+    for (NSUInteger i = 0; i < self.characterSubviews.count; i++) {
+        ELNPINView *subview = self.characterSubviews[i];
+        BOOL selected = i < count;
+        dispatch_group_enter(dispatch_group);
+        [subview setSelected:selected animated:animated completion:^{
+            __unused BOOL i_ = i;
+            dispatch_group_leave(dispatch_group);
+        }];
+    }
+    
+    dispatch_group_notify(dispatch_group, dispatch_get_main_queue(), ^{
+        if (completion) {
+            completion();
+        }
+    });
+    dispatch_group_leave(dispatch_group);
 }
 
 #pragma mark - Character Views
@@ -99,8 +130,16 @@
         value = [value stringByReplacingCharactersInRange:NSMakeRange(value.length - (NSUInteger)clippedCharactersCount, (NSUInteger)clippedCharactersCount) withString:@""];
     }
     
-    self.text = value;
-    [self sendActionsForControlEvents:UIControlEventEditingChanged];
+    __weak __typeof__(self) weakSelf = self;
+    [self setText:value animated:YES completion:^{
+        [weakSelf sendActionsForControlEvents:UIControlEventEditingChanged];
+
+        if (value.length >= self.numberOfCharacters) {
+            if ([weakSelf.delegate respondsToSelector:@selector(textFieldDidComplete:)]) {
+                [weakSelf.delegate textFieldDidComplete:weakSelf];
+            }
+        }
+    }];
 }
 
 - (void)deleteBackward {
@@ -108,35 +147,12 @@
         return;
     }
     
-    self.text = [self.text stringByReplacingCharactersInRange:NSMakeRange(self.text.length - 1, 1) withString:@""];
-    [self sendActionsForControlEvents:UIControlEventEditingChanged];
-}
-
-- (void)textValueChanged {
-    NSUInteger count = self.text.length;
+    NSString *text = [self.text stringByReplacingCharactersInRange:NSMakeRange(self.text.length - 1, 1) withString:@""];
     
-    // Merge all selections in the single animation group.
-    // This allows to perform the delegate callback when all animations have completed.
-    dispatch_group_t dispatch_group = dispatch_group_create();
-    
-    dispatch_group_enter(dispatch_group);
-    for (NSUInteger i = 0; i < self.characterSubviews.count; i++) {
-        ELNPINView *subview = self.characterSubviews[i];
-        BOOL selected = i < count;
-        dispatch_group_enter(dispatch_group);
-        [subview setSelected:selected animated:YES completion:^{
-            dispatch_group_leave(dispatch_group);
-        }];
-    }
-    
-    dispatch_group_notify(dispatch_group, dispatch_get_main_queue(), ^{
-        if (count >= self.numberOfCharacters) {
-            if ([self.delegate respondsToSelector:@selector(textFieldDidComplete:)]) {
-                [self.delegate textFieldDidComplete:self];
-            }
-        }
-    });
-    dispatch_group_leave(dispatch_group);
+    __weak __typeof__(self) weakSelf = self;
+    [self setText:text animated:YES completion:^{
+        [weakSelf sendActionsForControlEvents:UIControlEventEditingChanged];
+    }];
 }
 
 #pragma mark - Managing the Responder Chain
