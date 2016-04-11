@@ -17,7 +17,19 @@
 		1168E15C1CBB9B82009B09D0 /* ELNPINTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1168E15A1CBB9B82009B09D0 /* ELNPINTextField.m */; };
 		1168E15F1CBB9C64009B09D0 /* ELNPINView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1168E15D1CBB9C64009B09D0 /* ELNPINView.h */; };
 		1168E1601CBB9C64009B09D0 /* ELNPINView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1168E15E1CBB9C64009B09D0 /* ELNPINView.m */; };
+		1168E1681CBB9DE7009B09D0 /* ELNPINTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1168E1671CBB9DE7009B09D0 /* ELNPINTextFieldTests.m */; };
+		1168E16A1CBB9DE7009B09D0 /* ELNViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111D9FAD1C860CCA00CF71B4 /* ELNViews.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1168E16B1CBB9DE7009B09D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 111D9FA41C860CCA00CF71B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 111D9FAC1C860CCA00CF71B4;
+			remoteInfo = ELNViews;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		111D9FAD1C860CCA00CF71B4 /* ELNViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ELNViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +44,9 @@
 		1168E15A1CBB9B82009B09D0 /* ELNPINTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELNPINTextField.m; sourceTree = "<group>"; };
 		1168E15D1CBB9C64009B09D0 /* ELNPINView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELNPINView.h; sourceTree = "<group>"; };
 		1168E15E1CBB9C64009B09D0 /* ELNPINView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELNPINView.m; sourceTree = "<group>"; };
+		1168E1651CBB9DE7009B09D0 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1168E1671CBB9DE7009B09D0 /* ELNPINTextFieldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELNPINTextFieldTests.m; sourceTree = "<group>"; };
+		1168E1691CBB9DE7009B09D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +57,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1168E1621CBB9DE7009B09D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1168E16A1CBB9DE7009B09D0 /* ELNViews.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -49,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				111D9FB81C860CE800CF71B4 /* Source */,
+				1168E1661CBB9DE7009B09D0 /* Tests */,
 				111D9FAE1C860CCA00CF71B4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				111D9FAD1C860CCA00CF71B4 /* ELNViews.framework */,
+				1168E1651CBB9DE7009B09D0 /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +120,15 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		1168E1661CBB9DE7009B09D0 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1168E1671CBB9DE7009B09D0 /* ELNPINTextFieldTests.m */,
+				1168E1691CBB9DE7009B09D0 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -131,6 +165,24 @@
 			productReference = 111D9FAD1C860CCA00CF71B4 /* ELNViews.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		1168E1641CBB9DE7009B09D0 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1168E16F1CBB9DE7009B09D0 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				1168E1611CBB9DE7009B09D0 /* Sources */,
+				1168E1621CBB9DE7009B09D0 /* Frameworks */,
+				1168E1631CBB9DE7009B09D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1168E16C1CBB9DE7009B09D0 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 1168E1651CBB9DE7009B09D0 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -141,6 +193,9 @@
 				ORGANIZATIONNAME = "e-legion";
 				TargetAttributes = {
 					111D9FAC1C860CCA00CF71B4 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					1168E1641CBB9DE7009B09D0 = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -158,6 +213,7 @@
 			projectRoot = "";
 			targets = (
 				111D9FAC1C860CCA00CF71B4 /* ELNViews */,
+				1168E1641CBB9DE7009B09D0 /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -168,6 +224,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				111D9FC01C860D0B00CF71B4 /* Default.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1168E1631CBB9DE7009B09D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +248,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1168E1611CBB9DE7009B09D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1168E1681CBB9DE7009B09D0 /* ELNPINTextFieldTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1168E16C1CBB9DE7009B09D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 111D9FAC1C860CCA00CF71B4 /* ELNViews */;
+			targetProxy = 1168E16B1CBB9DE7009B09D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		111D9FB31C860CCA00CF71B4 /* Debug */ = {
@@ -312,6 +391,28 @@
 			};
 			name = Release;
 		};
+		1168E16D1CBB9DE7009B09D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.e-legion.Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1168E16E1CBB9DE7009B09D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.e-legion.Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -332,6 +433,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		1168E16F1CBB9DE7009B09D0 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1168E16D1CBB9DE7009B09D0 /* Debug */,
+				1168E16E1CBB9DE7009B09D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
