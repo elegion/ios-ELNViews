@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		111D9FBB1C860CE800CF71B4 /* ELNViews.h in Headers */ = {isa = PBXBuildFile; fileRef = 111D9FB91C860CE800CF71B4 /* ELNViews.h */; };
-		111D9FC01C860D0B00CF71B4 /* Default.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 111D9FBF1C860D0B00CF71B4 /* Default.xcconfig */; };
 		111D9FCD1C860ED800CF71B4 /* ELNScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 111D9FC91C860ED800CF71B4 /* ELNScrollView.h */; };
 		111D9FCE1C860ED800CF71B4 /* ELNLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 111D9FCA1C860ED800CF71B4 /* ELNLabel.h */; };
 		111D9FCF1C860ED800CF71B4 /* ELNLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 111D9FCB1C860ED800CF71B4 /* ELNLabel.m */; };
@@ -223,7 +222,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				111D9FC01C860D0B00CF71B4 /* Default.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
