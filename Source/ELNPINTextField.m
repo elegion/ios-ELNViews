@@ -11,7 +11,7 @@
 
 @interface ELNPINTextField ()
 
-@property (nonatomic, strong) NSArray<ELNPINTextFieldCell *> *characterSubviews;
+@property (nonatomic, strong) NSArray<ELNPINTextFieldCell *> *cells;
 
 @end
 
@@ -63,15 +63,15 @@
 
 - (void)setTextColor:(UIColor *)textColor {
     _textColor = textColor;
-    for (ELNPINTextFieldCell *subview in self.characterSubviews) {
-        subview.textColor = self.textColor;
+    for (ELNPINTextFieldCell *cell in self.cells) {
+        cell.textColor = self.textColor;
     }
 }
 
 - (void)setTextSize:(CGFloat)textSize {
     _textSize = textSize;
-    for (ELNPINTextFieldCell *subview in self.characterSubviews) {
-        subview.textSize = self.textSize;
+    for (ELNPINTextFieldCell *cell in self.cells) {
+        cell.textSize = self.textSize;
     }
 }
 
@@ -90,11 +90,11 @@
     dispatch_group_t dispatch_group = dispatch_group_create();
     
     dispatch_group_enter(dispatch_group);
-    for (NSUInteger i = 0; i < self.characterSubviews.count; i++) {
-        ELNPINTextFieldCell *subview = self.characterSubviews[i];
+    for (NSUInteger i = 0; i < self.cells.count; i++) {
+        ELNPINTextFieldCell *cell = self.cells[i];
         BOOL selected = i < count;
         dispatch_group_enter(dispatch_group);
-        [subview setSelected:selected animated:animated completion:^{
+        [cell setSelected:selected animated:animated completion:^{
             dispatch_group_leave(dispatch_group);
         }];
     }
@@ -112,16 +112,16 @@
 - (void)setNumberOfCharacters:(NSUInteger)numberOfCharacters {
     _numberOfCharacters = numberOfCharacters;
     
-    [self.characterSubviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    self.characterSubviews = @[];
+    [self.cells makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    self.cells = @[];
     
     for (NSUInteger i = 0; i < self.numberOfCharacters; i++) {
-        ELNPINTextFieldCell *subview = [self.cellClass new];
-        subview.userInteractionEnabled = NO;
-        subview.textColor = self.textColor;
-        subview.textSize = self.textSize;
-        [self addSubview:subview];
-        self.characterSubviews = [self.characterSubviews arrayByAddingObject:subview];
+        ELNPINTextFieldCell *cell = [self.cellClass new];
+        cell.userInteractionEnabled = NO;
+        cell.textColor = self.textColor;
+        cell.textSize = self.textSize;
+        [self addSubview:cell];
+        self.cells = [self.cells arrayByAddingObject:cell];
     }
     
     [self setNeedsLayout];
@@ -158,10 +158,10 @@
         return;
     }
     
-    NSString *text = [self.text stringByReplacingCharactersInRange:NSMakeRange(self.text.length - 1, 1) withString:@""];
+    NSString *value = [self.text stringByReplacingCharactersInRange:NSMakeRange(self.text.length - 1, 1) withString:@""];
     
     __weak __typeof__(self) weakSelf = self;
-    [self setText:text animated:YES completion:^{
+    [self setText:value animated:YES completion:^{
         [weakSelf sendActionsForControlEvents:UIControlEventEditingChanged];
     }];
 }
@@ -196,9 +196,9 @@
     CGFloat width = self.bounds.size.width / self.numberOfCharacters;
     CGFloat height = self.bounds.size.height;
     
-    for (NSUInteger i = 0; i < self.characterSubviews.count; i++) {
-        ELNPINTextFieldCell *subview = self.characterSubviews[i];
-        subview.frame = CGRectMake(i * width, 0, width, height);
+    for (NSUInteger i = 0; i < self.cells.count; i++) {
+        ELNPINTextFieldCell *cell = self.cells[i];
+        cell.frame = CGRectMake(i * width, 0, width, height);
     }
 }
 
