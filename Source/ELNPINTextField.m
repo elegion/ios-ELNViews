@@ -78,7 +78,14 @@
 #pragma mark - Text Updating
 
 - (void)setText:(NSString *)text animated:(BOOL)animated completion:(void (^)())completion {
+    if (_text == text) {
+        return;
+    }
+    
+    [self willChangeValueForKey:@"text"];
     _text = [text copy];
+    [self didChangeValueForKey:@"text"];
+
     [self textValueChangedAnimated:animated completion:completion];
 }
 
