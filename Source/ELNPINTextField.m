@@ -7,11 +7,11 @@
 //
 
 #import "ELNPINTextField.h"
-#import "ELNPINView.h"
+#import "ELNPINTextFieldCell.h"
 
 @interface ELNPINTextField ()
 
-@property (nonatomic, strong) NSArray<ELNPINView *> *characterSubviews;
+@property (nonatomic, assign) NSArray<ELNPINTextFieldCell *> *characterSubviews;
 
 @end
 
@@ -39,8 +39,20 @@
     self.keyboardType = UIKeyboardTypeNumberPad;
     self.keyboardAppearance = UIKeyboardAppearanceDefault;
     self.returnKeyType = UIReturnKeyDefault;
+    self.cellClass = [ELNPINTextFieldCell class];
     
+    self.textSize = 15;
     self.numberOfCharacters = 4;
+}
+
+#pragma mark - Creating Text Field Cells
+
+- (void)setCellClass:(Class)cellClass {
+    if (_cellClass == cellClass) {
+        return;
+    }
+    NSAssert([cellClass isSubclassOfClass:[ELNPINTextFieldCell class]], @"Cell class must be a subclass of the ELNPINTextFieldCell class.");
+    _cellClass = cellClass;
 }
 
 #pragma mark - Accessing the Text Attributes
@@ -51,14 +63,14 @@
 
 - (void)setTextColor:(UIColor *)textColor {
     _textColor = textColor;
-    for (ELNPINView *subview in self.characterSubviews) {
+    for (ELNPINTextFieldCell *subview in self.characterSubviews) {
         subview.textColor = self.textColor;
     }
 }
 
 - (void)setTextSize:(CGFloat)textSize {
     _textSize = textSize;
-    for (ELNPINView *subview in self.characterSubviews) {
+    for (ELNPINTextFieldCell *subview in self.characterSubviews) {
         subview.textSize = self.textSize;
     }
 }
@@ -79,11 +91,10 @@
     
     dispatch_group_enter(dispatch_group);
     for (NSUInteger i = 0; i < self.characterSubviews.count; i++) {
-        ELNPINView *subview = self.characterSubviews[i];
+        ELNPINTextFieldCell *subview = self.characterSubviews[i];
         BOOL selected = i < count;
         dispatch_group_enter(dispatch_group);
         [subview setSelected:selected animated:animated completion:^{
-            __unused BOOL i_ = i;
             dispatch_group_leave(dispatch_group);
         }];
     }
@@ -105,7 +116,7 @@
     self.characterSubviews = @[];
     
     for (NSUInteger i = 0; i < self.numberOfCharacters; i++) {
-        ELNPINView *subview = [ELNPINView new];
+        ELNPINTextFieldCell *subview = [self.cellClass new];
         subview.userInteractionEnabled = NO;
         subview.textColor = self.textColor;
         subview.textSize = self.textSize;
@@ -186,7 +197,7 @@
     CGFloat height = self.bounds.size.height;
     
     for (NSUInteger i = 0; i < self.characterSubviews.count; i++) {
-        ELNPINView *subview = self.characterSubviews[i];
+        ELNPINTextFieldCell *subview = self.characterSubviews[i];
         subview.frame = CGRectMake(i * width, 0, width, height);
     }
 }

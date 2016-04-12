@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class ELNPINTextField;
 
 @protocol ELNPINTextFieldDelegate  <NSObject>
@@ -19,15 +21,15 @@
 
 @interface ELNPINTextField : UIControl <UIKeyInput>
 
-@property (nonatomic, weak) IBOutlet id<ELNPINTextFieldDelegate> delegate;
+@property (nonatomic, weak, nullable) IBOutlet id<ELNPINTextFieldDelegate> delegate;
 
 /// Default value is 4.
 @property (nonatomic, assign) NSUInteger numberOfCharacters;
 
-@property (nonatomic, copy) NSString *text;
+@property (nonatomic, copy, nullable) NSString *text;
 
 /// Default value is `darkTextColor`.
-@property (nonatomic, copy) IBInspectable UIColor *textColor;
+@property (nonatomic, copy, nullable) IBInspectable UIColor *textColor;
 
 /// Default value is 15.
 @property (nonatomic, assign) IBInspectable CGFloat textSize;
@@ -42,3 +44,5 @@
 @property (nonatomic, assign) UIReturnKeyType returnKeyType;
 
 @end
+
+NS_ASSUME_NONNULL_END
