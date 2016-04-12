@@ -43,6 +43,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// Default value is UIReturnKeyDefault.
 @property (nonatomic, assign) UIReturnKeyType returnKeyType;
 
+/// Default value is ELNPINTextFieldCell.
+@property (nonatomic, assign) Class cellClass;
+
 @end
 
 NS_ASSUME_NONNULL_END

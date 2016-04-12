@@ -1,21 +1,21 @@
 //
-//  ELNPINView.m
+//  ELNPINTextFieldCell.m
 //  ELNViews
 //
 //  Created by Dmitry Nesterenko on 11.04.16.
 //  Copyright © 2016 e-legion. All rights reserved.
 //
 
-#import "ELNPINView.h"
+#import "ELNPINTextFieldCell.h"
 
-@interface ELNPINView ()
+@interface ELNPINTextFieldCell ()
 
 @property (nonatomic, strong) CAShapeLayer *selectedShape;
 @property (nonatomic, strong) CAShapeLayer *notSelectedShape;
 
 @end
 
-@implementation ELNPINView
+@implementation ELNPINTextFieldCell
 
 #pragma mark - Initialization
 
@@ -36,7 +36,6 @@
 }
 
 - (void)__initialize {
-    self.textSize = 15;
     self.textColor = [UIColor darkTextColor];
     
     self.backgroundColor = [UIColor clearColor];

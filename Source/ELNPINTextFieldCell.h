@@ -1,5 +1,5 @@
 //
-//  ELNPINView.h
+//  ELNPINTextFieldCell.h
 //  ELNViews
 //
 //  Created by Dmitry Nesterenko on 11.04.16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ELNPINView : UIView
+@interface ELNPINTextFieldCell : UIView
 
 @property (nonatomic, assign) CGFloat textSize;
 @property (nonatomic, copy) UIColor *textColor;
