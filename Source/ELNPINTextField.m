@@ -11,7 +11,7 @@
 
 @interface ELNPINTextField ()
 
-@property (nonatomic, assign) NSArray<ELNPINTextFieldCell *> *characterSubviews;
+@property (nonatomic, strong) NSArray<ELNPINTextFieldCell *> *characterSubviews;
 
 @end
 
