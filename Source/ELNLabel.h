@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_8_0
+
 @interface ELNLabel : UILabel
 
 /**
@@ -22,3 +24,5 @@
 @property (nonatomic, assign) BOOL calculatesPreferredMaxLayoutWidthAutomatically;
 
 @end
+
+#endif

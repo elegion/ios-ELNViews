@@ -8,6 +8,8 @@
 
 #import "ELNLabel.h"
 
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_8_0
+
 @implementation ELNLabel
 
 #pragma mark - Initialization
@@ -40,3 +42,5 @@
 }
 
 @end
+
+#endif
