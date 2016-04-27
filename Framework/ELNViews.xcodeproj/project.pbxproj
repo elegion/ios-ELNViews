@@ -91,22 +91,24 @@
 				111D9FBE1C860CFC00CF71B4 /* Views */,
 				111D9FBD1C860CF100CF71B4 /* Supporting Files */,
 			);
-			path = Source;
+			name = Source;
+			path = ../Source;
 			sourceTree = "<group>";
 		};
 		111D9FBD1C860CF100CF71B4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				111D9FBF1C860D0B00CF71B4 /* Default.xcconfig */,
-				111D9FB91C860CE800CF71B4 /* ELNViews.h */,
 				111D9FBA1C860CE800CF71B4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			path = ../Framework;
 			sourceTree = "<group>";
 		};
 		111D9FBE1C860CFC00CF71B4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				111D9FB91C860CE800CF71B4 /* ELNViews.h */,
 				111D9FCA1C860ED800CF71B4 /* ELNLabel.h */,
 				111D9FCB1C860ED800CF71B4 /* ELNLabel.m */,
 				1168E1591CBB9B82009B09D0 /* ELNPINTextField.h */,
@@ -364,7 +366,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.e-legion.ELNViewControllers";
@@ -380,7 +382,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.e-legion.ELNViewControllers";
