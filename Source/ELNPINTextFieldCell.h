@@ -11,9 +11,9 @@
 @interface ELNPINTextFieldCell : UIView
 
 @property (nonatomic, assign) CGFloat textSize;
-@property (nonatomic, copy) UIColor *textColor;
+@property (nonatomic, copy, nullable) UIColor *textColor;
 @property (nonatomic, assign) BOOL selected;
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated completion:(void (^)())completion;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated completion:(nullable void (^)())completion;
 
 @end
